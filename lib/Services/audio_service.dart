@@ -104,7 +104,7 @@ class AudioPlayerHandlerImpl extends BaseAudioHandler
     });
 
     preferredQuality = Hive.box('settings')
-        .get('streamingQuality', defaultValue: '96 kbps')
+        .get('streamingQuality', defaultValue: '320 kbps')
         .toString();
     // cacheSong =
     //     Hive.box('settings').get('cacheSong', defaultValue: false) as bool;
