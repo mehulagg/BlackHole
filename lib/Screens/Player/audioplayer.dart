@@ -58,7 +58,7 @@ class PlayScreen extends StatefulWidget {
 class _PlayScreenState extends State<PlayScreen> {
   bool fromMiniplayer = false;
   String preferredQuality = Hive.box('settings')
-      .get('streamingQuality', defaultValue: '96 kbps')
+      .get('streamingQuality', defaultValue: '320 kbps')
       .toString();
   String repeatMode =
       Hive.box('settings').get('repeatMode', defaultValue: 'None').toString();
